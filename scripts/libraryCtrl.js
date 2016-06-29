@@ -5,8 +5,8 @@ angular.module('scLibraryApp', []).controller('libraryCtrl', function($scope) {
 
 	$scope.init = function() {
 		artists.push({"name": "Da Tweekaz", "url": "https://soundcloud.com/datweekaz", "country": "Norway"});
-		artists.push({"name": "WP", "url": "https://soundcloud.com/datweekaz", "country": "Sweden"});
-		artists.push({"name":"KyrellaOfficial","url":"https://soundcloud.com/kyrellaofficial","country":"Netherlands"});
+		//artists.push({"name": "WP", "url": "https://soundcloud.com/datweekaz", "country": "Sweden"});
+		//artists.push({"name":"KyrellaOfficial","url":"https://soundcloud.com/kyrellaofficial","country":"Netherlands"});
 	}
 	
     $scope.sortBy = function(newKey) {
