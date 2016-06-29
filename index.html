@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SC library</title>
+		<script src="scripts/angular.min.js"></script>
+		<link rel="stylesheet" href="style/style.css" />
+	</head>
+	<body ng-app="scLibraryApp">
+		<div id="container" ng-controller="libraryCtrl">
+			<table class="center">
+				<tr>
+					<th ng-click="sortBy('name')">
+						Artist <span class="sortorder" ng-show="getKey() === 'name'" ng-class="{reverse:isReversed()}"></span>
+					</th>
+					<th ng-click="sortBy('country')">
+						Country <span class="sortorder" ng-show="getKey() === 'country'" ng-class="{reverse:isReversed()}"></span>
+					</th>
+				</tr>
+				<tr ng-repeat="artist in getArtists() | orderBy:getKey():isReversed()">
+					<td><a ng-href="{{artist.url}}" target="_blank">{{artist.name}}</a></td>
+					<td><img ng-src="{{getCountryFlag(artist.country)}}" alt="{{artist.country}}"></td>
+				</tr>
+		</div>
+		<script src="scripts/libraryCtrl.js"></script>
+	</body>
+	
+</html>
