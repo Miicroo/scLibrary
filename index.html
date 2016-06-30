@@ -20,10 +20,9 @@
 				</tr>
 				<tr ng-repeat="artist in getArtists() | orderBy:getKey():isReversed()">
 					<td><a ng-href="{{artist.url}}" target="_blank">{{artist.name}}</a></td>
-					<td><img ng-src="{{getCountryFlag(artist.country)}}" alt="{{artist.country}}"></td>
+					<td><img ng-src="{{getCountryFlag(artist.country)}}" alt="{{artist.country}}" title="{{artist.country}}"></td>
 				</tr>
 		</div>
 		<script src="scripts/libraryCtrl.js"></script>
 	</body>
-	
 </html>
