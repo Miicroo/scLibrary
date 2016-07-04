@@ -8,7 +8,7 @@ angular.module('scLibraryApp', []).controller('libraryCtrl', function($scope) {
 			{"name":"Da Tweekaz","url":"https://soundcloud.com/datweekaz","country":"Norway"},
 			{"name":"A V I 8","url":"https://soundcloud.com/avi8music", "country":"Scotland"},
 			{"name":"Aerolite","url":"https://soundcloud.com/aerolitedj","country":"United States"},
-			{"name":"Audiofreq","url":"https://soundcloud.com/audiofreqdj","country":"Netherlands"},
+			{"name":"Audiofreq","url":"https://soundcloud.com/audiofreqdj","country":"Australia"},
 			{"name":"DJ KEIJI","url":"https://soundcloud.com/keijidj","country":"United States"},
 			{"name":"Recharge","url":"https://soundcloud.com/rechargeofficial","country":"Netherlands"},
 			{"name":"Refuzion","url":"https://soundcloud.com/refuzion", "country": "Norway"},
@@ -42,20 +42,37 @@ angular.module('scLibraryApp', []).controller('libraryCtrl', function($scope) {
 			{"name":"D.E.Q","url":"https://soundcloud.com/digitalearthquake","country":"Netherlands"},
 			{"name":"Dillytek","url":"https://soundcloud.com/dillytek-djs","country":"Australia"},
 			{"name":"Elysiums","url":"https://soundcloud.com/elysiums_official","country":"Poland"},
-			{"name":"BrennanHeart","url":"https://soundcloud.com/brennanheart","country":"Germany"},
+			{"name":"Brennan Heart","url":"https://soundcloud.com/brennanheart","country":"Germany"},
 			{"name":"Heatwavez","url":"https://soundcloud.com/heatwavezofficial","country":"Belgium"},
 			{"name":"Massive New Krew","url":"https://soundcloud.com/massive-new-krew","country":"Japan"},
 			{"name":"Psyko Punkz","url":"https://soundcloud.com/psykopunkz","country":"Netherlands"},
 			{"name":"Sephyx","url":"https://soundcloud.com/sephyxofficial","country":"Netherlands"},
+			{"name":"Tatanka","url":"https://soundcloud.com/officialdjtatanka","country":"Italy"},
+			{"name":"Technoboy","url":"https://soundcloud.com/djtechnoboy","country":"Italy"},
+			{"name":"Tuneboy","url":"https://soundcloud.com/tuneboy","country":"Italy"},
+			{"name":"Zatox","url":"https://soundcloud.com/djzatox","country":"Italy"},
+			{"name":"Code Black","url":"https://soundcloud.com/codeblackmedia","country":"Australia"},
+			{"name":"DBSTF","url":"https://soundcloud.com/dbstf","country":"Netherlands"},
+			{"name":"Isaac","url":"https://soundcloud.com/djisaac","country":"Netherlands"},
 		];
 	}
 	
-    	$scope.sortBy = function(newKey) {
+    $scope.sortBy = function(newKey) {
 		reverse = (newKey === key) ? !reverse : false;
 		key = newKey;
 	};
-	$scope.getKey = function() {
+	$scope.getKey = function() {		
 		return key;
+	};
+	$scope.getOrderKey = function() {
+		var sign = $scope.isReversed() ? '-' : '';
+		var keyObj = [sign + key]
+		
+		if(key == 'country') {
+			keyObj.push('name');
+		}
+		
+		return keyObj;
 	};
 	$scope.isReversed = function() {
 		return reverse;
