@@ -18,7 +18,7 @@
 						Country <span class="sortorder" ng-show="getKey() === 'country'" ng-class="{reverse:isReversed()}"></span>
 					</th>
 				</tr>
-				<tr ng-repeat="artist in getArtists() | orderBy:getKey():isReversed()">
+				<tr ng-repeat="artist in getArtists() | orderBy:getOrderKey()">
 					<td><a ng-href="{{artist.url}}" target="_blank">{{artist.name}}</a></td>
 					<td><img ng-src="{{getCountryFlag(artist.country)}}" alt="{{artist.country}}" title="{{artist.country}}"></td>
 				</tr>
