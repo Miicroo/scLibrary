@@ -54,6 +54,22 @@ angular.module('scLibraryApp', []).controller('libraryCtrl', function($scope) {
 			{"name":"Code Black","url":"https://soundcloud.com/codeblackmedia","country":"Australia"},
 			{"name":"DBSTF","url":"https://soundcloud.com/dbstf","country":"Netherlands"},
 			{"name":"Isaac","url":"https://soundcloud.com/djisaac","country":"Netherlands"},
+			{"name":"Bass Modulators","url":"https://soundcloud.com/bassmodulators","country":"Netherlands"},
+			{"name":"Frontliner","url":"https://soundcloud.com/frontliner","country":"Netherlands"},
+			{"name":"MetalMind","url":"https://soundcloud.com/metalminddj","country":"France"},
+			{"name":"Pure Devotion","url":"https://soundcloud.com/pure-devotion","country":"France"},
+			{"name":"Subraver","url":"https://soundcloud.com/subraver","country":"Netherlands"},
+			{"name":"Udex","url":"https://soundcloud.com/udexofficial","country":"Netherlands"},
+			{"name":"Anklebreaker","url":"https://soundcloud.com/anklebreaker","country":"Netherlands"},
+			{"name":"Epsylon","url":"https://soundcloud.com/epsylon-media","country":"France"},
+			{"name":"Ecstatic","url":"https://soundcloud.com/ecstaticnl","country":"Netherlands"},
+			{"name":"Alphaverb","url":"https://soundcloud.com/alphaverbnl","country":"Netherlands"},
+			{"name":"Atlantis","url":"https://soundcloud.com/atlantismedia","country":"Germany"},
+			{"name":"Devin Wild","url":"https://soundcloud.com/devinwildmusic","country":"Netherlands"},
+			{"name":"Blackburn","url":"https://soundcloud.com/djblackburnnl","country":"Netherlands"},
+			{"name":"D-MIND","url":"https://soundcloud.com/djdmind","country":"Netherlands"},
+			{"name":"Energyzed","url":"https://soundcloud.com/energyzed-music","country":"Netherlands"},
+			{"name":"Toneshifterz","url":"https://soundcloud.com/toneshifterzofficial","country":"Australia"},
 		];
 	}
 	
