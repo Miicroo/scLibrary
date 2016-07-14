@@ -93,6 +93,7 @@ angular.module('scLibraryApp', []).controller('libraryCtrl', function($scope) {
 			{"name":"OUTBREAK","url":"https://soundcloud.com/djoutbreakmusic","country":"Netherlands"},
 			{"name":"Ran-D","url":"https://soundcloud.com/djrandofficial","country":"Netherlands"},
 			{"name":"Demi Kanon","url":"https://soundcloud.com/demi-kanon","country":"Netherlands"},
+			{"name":"Theo Gobensen","url":"https://soundcloud.com/theogobensen","country":"Singapore"},
 		];
 	}
 	
